@@ -84,15 +84,15 @@ Steps:
               Company: The Doors
                 Title: Apprentice Doorknocker
 Main responsibilities: Knocking on doors
-                 From: August 2012
-                Until: December 2015
+                 From: Aug 2012
+                Until: Dec 2015
                     [Edit]
 
               Company: The Doors
                 Title: Chief Doorknocker
 Main responsibilities: Knocking on doors
                        Knock knock knocking on wood
-                 From: January 2016
+                 From: Jan 2016
                 Until: Present
                     [Edit]
 
