@@ -8,16 +8,18 @@ export default function Field({ label, initialValue, editing }) {
   }
 
   return (
-    <label>
-      {label ? `${label}:` : ''}
+    <>
       {editing ? (
-        <input
-          value={value}
-          onChange={handleChange}
-        />
+        <label>
+          {label ? `${label}:` : ''}
+          <input
+            value={value}
+            onChange={handleChange}
+          />
+        </label>
       ) : (
-        <p>{value}</p>
-      )} 
-    </label>
+        <div>{label ? `${label}: ` : ''}{value}</div>
+      )}
+    </>
   )
 }

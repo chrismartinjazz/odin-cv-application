@@ -45,11 +45,12 @@ Steps:
 
 - DONE Design general structure of page.
 - DONE Decide on components and structure
-- Build static version of page with hard-coded data.
-- Add interactivity to the first section.
-- Add interactivity to the other two sections.
-- OPTIONAL: Add ability to have multiple education / job sections.
-- Styling.
+- DONE Build static version of page with hard-coded data.
+- DONE Add interactivity to the first section.
+- DONE Add interactivity to the other two sections.
+- DONE OPTIONAL: Add ability to have multiple education / job sections.
+- DONE Add navbar
+- Styling
 
 ```txt
 [CV Builder]                              [Clear]
@@ -122,7 +123,7 @@ The other sections will look like:
                 Title: |Chief Doorknocker           |
 Main responsibilities: |Knocking on doors           | [Delete]
                        |Knock knock knocking on wood| [Delete]
-                       [Add New] 
+                       [New] 
                  From: |January 2016                |
                 Until: |                            |
                 [Save] [Delete]

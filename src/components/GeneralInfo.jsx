@@ -2,7 +2,7 @@ import { useState } from "react";
 import Field from "./Field";
 
 export default function GeneralInfo() {
-  const [editing, setEditing] = useState(true);
+  const [editing, setEditing] = useState(false);
   
   const initialGeneralInfo = {
     name: "John Smith",

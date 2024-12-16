@@ -9,14 +9,14 @@ export default function PracticalExperience() {
       id: 0,
       company: "The Doors",
       title: "Apprentice Doorknocker",
-      responsibilities: ["Knocking on doors"],
+      responsibilities: [{id: 0, value: "Knocking on doors"}],
       from: new Date("August 2012"),
       until: new Date("December 2015"),
     },{
       id: 1,
       company: "The Doors",
       title: "Chief Doorknocker",
-      responsibilities: ["Knocking on doors", "Knock knock knocking on wood"],
+      responsibilities: [{id: 0, value: "Knocking on doors"}, {id: 1, value: "Knock knock knocking on wood"}],
       from: new Date("Jan 2016"),
       until: new Date("Dec 2025"),
     }
@@ -51,7 +51,7 @@ export default function PracticalExperience() {
     <>
       <h2>Work</h2>
       {entries.map(entry => {
-        const init = initialPracticalExperience[entry.id];
+        const init = initialPracticalExperience.find(element => element.id === entry.id);
         return (
           <div key={entry.id}>
             <Field
@@ -69,6 +69,7 @@ export default function PracticalExperience() {
             <FieldList
               label="Main responsibilities"
               initialValues={init ? init.responsibilities : []}
+              editing={entry.editing}
             />
             <br />
             <Field
